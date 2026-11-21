@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0a08">
+<meta name="robots" content="noindex">
+<title>A second wrap of the fragment · Ink from 79 AD</title>
+<meta name="description" content="Another tapering wrap from the same broken piece. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A second wrap of the fragment · Ink from 79 AD">
+<meta property="og:description" content="Another tapering wrap from the same broken piece. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta property="og:image" content="https://jamiejmann.github.io/scroll-gallery/og/fragment-500p2-a-second-wrap.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jamiejmann.github.io/scroll-gallery/pieces/fragment-500p2-a-second-wrap.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A second wrap of the fragment · Ink from 79 AD">
+<meta name="twitter:description" content="Another tapering wrap from the same broken piece. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta name="twitter:image" content="https://jamiejmann.github.io/scroll-gallery/og/fragment-500p2-a-second-wrap.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/cormorant-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="topbar"><a class="brand" href="../index.html">← <span>Ink</span> from 79 AD</a>
+<button class="btn small" id="share" type="button">Share this view</button></div>
+<main class="wrap">
+  <div class="piece-head">
+    <div class="kicker"><a href="../scrolls/pherc-500p2.html" style="color:inherit;text-decoration:none">PHerc. 500P2</a> · a scroll buried by Vesuvius in 79 AD</div>
+    <h1>A second wrap of the fragment</h1>
+    <p>You're looking at a page from a 2,000-year-old book that has never been opened. Pinch or scroll to zoom, drag to move around.</p>
+  </div>
+  <div class="viewers" id="viewers">
+    <div class="osd" id="osdMain"><span class="label" id="mainLabel">Gold = where the AI sees ink</span></div>
+    <div class="osd" id="osdTeam" hidden><span class="label">The team's picture (smaller preview)</span></div>
+  </div>
+  <div class="modes" role="group" aria-label="How to show the picture">
+    <button class="btn on" data-mode="overlay" type="button">✨ Gold highlight</button>
+    <button class="btn" data-mode="ink" type="button">Ink only</button>
+    <button class="btn" data-mode="scan" type="button">Original scan</button>
+  </div>
+  
+  <details class="more" id="tools">
+    <summary>More tools: make it easier to read</summary>
+    <p><span class="tag">These only change how the picture looks on your screen, not the reading itself.</span></p>
+    <div class="tools">
+      <label>Contrast <input type="range" id="vContrast" min="0.5" max="4" step="0.1" value="1"></label>
+      <label>Brightness <input type="range" id="vBright" min="-120" max="120" step="5" value="0"></label>
+      <label>Hide faint marks <input type="range" id="vCut" min="0" max="95" step="5" value="0"></label>
+      <label>Gold strength <input type="range" id="vOpacity" min="0" max="100" step="5" value="80"></label>
+      <label>Highlight colour <select id="vColor"><option value="#e3b25a">Gold</option><option value="#ff4b3e">Red</option><option value="#29d3ff">Blue</option><option value="#47ff6a">Green</option></select></label>
+      <label class="check"><input type="checkbox" id="vInvert"> Dark letters on light</label>
+    </div>
+    <p><button class="btn small" id="vReset" type="button">Reset</button></p>
+  </details>
+  <section style="padding:26px 0 0">
+    <div class="panel">
+      <h3>The story of this piece</h3>
+      <p>A neighbouring wrap of the same fragment. The shape is similar; the pattern of marks may or may not be. That comparison is half the fun of a fragment like this.</p>
+      <h3>What to look for</h3>
+      <p>Look near the middle, where the sheet is widest, then toward the tip.</p>
+      <h3>What does the gold mean?</h3>
+      <p>The ink on these scrolls is made of soot, just like the burnt papyrus, so it's nearly invisible in X-rays. An AI that learned from
+      known letters paints <span class="gold">gold</span> wherever it thinks ink is. Brighter gold means it's more confident. It's a very good guess, not a reading.</p>
+    </div>
+  </section>
+  <nav class="pager"><a class="btn" href="fragment-500p2-a-pointed-piece.html">← A pointed piece</a><a class="btn primary" href="fragment-500p2-a-third-wrap.html">Next: A third wrap of the fragment →</a></nav>
+  <section style="padding:10px 0 0"><h2>More from this scroll</h2>
+<div class="more-row">
+    <a class="card reveal " href="../pieces/fragment-500p2-a-pointed-piece.html"><img src="../thumbs/20250825181917--2_gold.jpg" alt="A pointed piece: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A pointed piece</h3><p>A tapering wrap from a broken fragment, with tight rows of marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="../pieces/fragment-500p2-a-third-wrap.html"><img src="../thumbs/20250825181939-4_gold.jpg" alt="A third wrap of the fragment: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A third wrap of the fragment</h3><p>One more wrap from the broken fragment.</p><span class="go">Explore →</span></div></a>
+</div></section>
+  <details class="more">
+    <summary>For the curious: how this picture was made</summary>
+    <p>This is one <i>segment</i>: a stretch of papyrus that the Vesuvius Challenge team traced through a 3D X-ray scan
+    and flattened into a picture. The ink map is the team&#x27;s published ink model, published by the team in the open data and used here with credit.
+    We did not re-run the model. The scan view is the X-ray surface (the middle layers), sometimes shown at a slightly lower
+    resolution so the site stays quick to load.</p>
+    <p>Size: 4,592 × 8,192 pixels (about 10 × 18 mm).</p>
+    <p>Segment <code>20250825181859--1</code><br>Data: <code>s3://vesuvius-challenge-open-data/PHerc0500P2/segments/20250825181859--1/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr</code><br>Published map: <a href="https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0500P2/segments/20250825181859--1/ink-detection/downsampled/PHerc0500P2-20250825181859-2.215um-0.4m-111keV-volume-20250526151718-20260417190342-new_canon_autoresearch_recipe-tile256-stride128-ds8.jpg">download</a></p>
+  </details>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <button class="x" id="toastX" aria-label="Close">×</button>
+  <h3>You just zoomed into a scroll sealed since 79 AD.</h3>
+  <p>Nobody had seen this page for almost 2,000 years until X-rays and AI brought it back. Show a friend exactly what you're looking at.</p>
+  <button class="btn primary small" id="toastShare" type="button">Share this view</button>
+</div>
+<footer><div class="wrap">
+<p>Made by Jamie Manning, a history lover learning about AI. Ink maps on this site are either
+<b>Reader V3</b> by Domenico Russo (MIT license), run on a laptop with the free reader, or the
+Vesuvius Challenge team's own published maps (used with credit). The reading code comes from the
+team's <a href="https://github.com/ScrollPrize/villa">villa</a> project (MIT).
+Scroll scans: <a href="https://scrollprize.org">Vesuvius Challenge</a>,
+<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>:
+free for non-commercial use with credit. Pictures on this site come from that data and carry the same terms. Please cite
+<i>Vesuvius Challenge – CT Scans of Herculaneum Papyri</i>.</p>
+<p>The free laptop reader and Windows app: <a href="https://github.com/jamiejmann/vesuvius-cpu-reader">github.com/jamiejmann/vesuvius-cpu-reader</a>.
+Deep-zoom viewer: OpenSeadragon (BSD). Headings: Cormorant Garamond (OFL). This is a personal project, not an official Vesuvius Challenge site.</p>
+</div></footer>
+<script>window.PIECE = {"id": "20250825181859--1", "slug": "fragment-500p2-a-second-wrap", "title": "A second wrap of the fragment", "width": 4592, "height": 8192, "ink_lo": 33.0, "ink_hi": 241.0, "team_local": "team/20250825181859--1_team_ds8.jpg"};</script>
+<script src="../vendor/openseadragon/openseadragon.min.js"></script>
+<script src="../assets/piece.js"></script>
+</body></html>

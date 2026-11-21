@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0c0a08">
 <meta name="robots" content="noindex">
-<title>Ink from 79 AD: a 2,000-year-old scroll, read on a laptop</title>
-<meta name="description" content="Zoom into a scroll buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold, run on an ordinary laptop.">
+<title>Ink from 79 AD: 2,000-year-old scrolls, revealed</title>
+<meta name="description" content="Zoom into scrolls buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold. Explore from your phone or laptop.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ink from 79 AD: a 2,000-year-old scroll, read on a laptop">
-<meta property="og:description" content="Zoom into a scroll buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold, run on an ordinary laptop.">
+<meta property="og:title" content="Ink from 79 AD: 2,000-year-old scrolls, revealed">
+<meta property="og:description" content="Zoom into scrolls buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold. Explore from your phone or laptop.">
 <meta property="og:image" content="https://jamiejmann.github.io/scroll-gallery/og/index.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jamiejmann.github.io/scroll-gallery/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ink from 79 AD: a 2,000-year-old scroll, read on a laptop">
-<meta name="twitter:description" content="Zoom into a scroll buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold, run on an ordinary laptop.">
+<meta name="twitter:title" content="Ink from 79 AD: 2,000-year-old scrolls, revealed">
+<meta name="twitter:description" content="Zoom into scrolls buried by Vesuvius in 79 AD. AI reveals the hidden ink in gold. Explore from your phone or laptop.">
 <meta name="twitter:image" content="https://jamiejmann.github.io/scroll-gallery/og/index.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/cormorant-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,10 @@
 </head>
 <body>
 <div class="topbar"><a class="brand" href="index.html"><span>Ink</span> from 79 AD</a>
-<a class="btn small primary" href="pieces/where-the-letters-appeared.html">Start exploring</a></div>
+<div class="btnrow">
+  <button class="btn small" id="surprise" type="button">Surprise me</button>
+  <a class="btn small primary" href="pieces/where-the-letters-appeared.html">Start exploring</a>
+</div></div>
 <main class="wrap">
   <p class="draft">Unlisted preview for the Vesuvius Challenge team. This site is not announced.</p>
   <div class="hero">
@@ -31,9 +34,11 @@
       <div class="kicker">Buried by Vesuvius · Revealed by AI</div>
       <h1>You're looking at a book from <span class="gold">79 AD</span>.</h1>
       <p class="lead">When Mount Vesuvius erupted, it buried a library of papyrus scrolls and baked them into charcoal.
-      They're too fragile to unroll. Now X-rays and AI can read the ink hidden inside, and you can explore it right here.</p>
+      They're too fragile to unroll. Now X-rays and AI can read the ink hidden inside, and you can explore
+      30 pieces from 10 of those scrolls right here.</p>
       <div class="btnrow" style="margin-top:22px">
         <a class="btn primary" href="pieces/where-the-letters-appeared.html">Start exploring →</a>
+        <button class="btn" id="surprise2" type="button">Surprise me</button>
         <a class="btn" href="#story">What am I looking at?</a>
       </div>
     </div>
@@ -57,7 +62,7 @@
       <div class="panel reveal"><div class="num">II</div><h3>Too fragile to open</h3>
         <p>Found in the 1750s, most scrolls crumble if you try to unroll them. So scientists scan them with powerful X-rays and unroll them <i>virtually</i>, one layer at a time.</p></div>
       <div class="panel reveal"><div class="num">III</div><h3>AI finds the ink</h3>
-        <p>The ink is soot on burnt papyrus, almost invisible. An AI trained on known letters spots it. I made that step work on an ordinary laptop, so anyone can try.</p></div>
+        <p>The ink is soot on burnt papyrus, almost invisible. An AI trained on known letters spots it. Some of the pictures here were made on an ordinary laptop; others are the team's own published maps, used with credit.</p></div>
     </div>
   </section>
 
@@ -71,35 +76,64 @@
   <section class="reveal" id="why">
     <h2>What you can do here</h2>
     <div class="story">
-      <div class="panel"><h3>Zoom all the way in</h3><p>Every piece at full size, down to single strokes, with nothing to install and no account. Works with pinch-zoom on your phone.</p></div>
+      <div class="panel"><h3>Zoom all the way in</h3><p>Every piece at a high resolution, down to single strokes, with nothing to install and no account. Works with pinch-zoom on your phone.</p></div>
       <div class="panel"><h3>See the ink on the papyrus</h3><p>The gold highlight sits right on top of the real X-ray scan, so you can see where the ink lies on the burnt sheet. Sliders help tired eyes.</p></div>
       <div class="panel"><h3>Share the exact spot</h3><p>Found something intriguing? “Share this view” sends a friend to the very place and zoom you're looking at.</p></div>
     </div>
     <p style="color:var(--muted);margin-top:14px">And if you have a Windows PC, the <a href="https://github.com/jamiejmann/vesuvius-cpu-reader">free one-click app</a> lets you read other pieces yourself, no graphics card needed.</p>
   </section>
 
-  <section id="gallery">
-    <h2 class="reveal">Explore the scroll</h2>
-    <p class="reveal" style="color:var(--muted)">Six pieces of the same scroll, PHerc. 1447. Start with the first and press “Next” to go through them one by one.</p>
-    <div class="grid">
-    <a class="card reveal" href="pieces/where-the-letters-appeared.html"><span class="badge">Start here</span>
-      <img src="thumbs/20250702235910-auto_grown_20250702235910292_gold.jpg" alt="Where the letters appeared: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>Where the letters appeared</h3><p>The small piece of scroll where the team reported finding letters.</p><span class="go">Explore →</span></div></a>
-    <a class="card reveal" href="pieces/wrap-58.html">
-      <img src="thumbs/20260928183143-w058_gold.jpg" alt="Wrap 58: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>Wrap 58</h3><p>One full turn of the rolled-up scroll, about 4 × 7 cm, flattened out.</p><span class="go">Explore →</span></div></a>
-    <a class="card reveal" href="pieces/wrap-60.html">
-      <img src="thumbs/20260928183144-w060_gold.jpg" alt="Wrap 60: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>Wrap 60</h3><p>Two turns deeper into the same scroll.</p><span class="go">Explore →</span></div></a>
-    <a class="card reveal" href="pieces/wrap-62.html">
-      <img src="thumbs/20260928183145-w062_gold.jpg" alt="Wrap 62: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>Wrap 62</h3><p>Another two turns in, with some of the clearest rows of marks.</p><span class="go">Explore →</span></div></a>
-    <a class="card reveal" href="pieces/the-bright-patch.html">
-      <img src="thumbs/20250703025628-auto_grown_20250703025628283_gold.jpg" alt="The bright patch: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>The bright patch</h3><p>A smaller piece with strong, bold marks.</p><span class="go">Explore →</span></div></a>
-    <a class="card reveal" href="pieces/the-puzzle-piece.html">
-      <img src="thumbs/20250703034159-auto_grown_20250703034159599_gold.jpg" alt="The puzzle piece: gold marks show where the AI sees ink" loading="lazy">
-      <div class="body"><h3>The puzzle piece</h3><p>A wide piece full of activity. What do you see?</p><span class="go">Explore →</span></div></a>
+  <section id="start">
+    <h2 class="reveal">Start here</h2>
+    <p class="reveal" style="color:var(--muted)">Four good first stops. Or press “Surprise me” and land on a random piece.</p>
+    <div class="featured">
+    <a class="card reveal " href="pieces/where-the-letters-appeared.html"><span class="badge">Start here</span><img src="thumbs/20250702235910-auto_grown_20250702235910292_gold.jpg" alt="Where the letters appeared: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Where the letters appeared</h3><p>The small piece of scroll where the team reported finding letters.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc139-the-title.html"><span class="badge">Featured</span><img src="thumbs/20260422000000-title_2026042222_zmid_flatboi_gold.jpg" alt="The name of the book: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The name of the book</h3><p>The title of this still-rolled scroll, recovered by the team: Philodemus, On Gods, Book 8.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/first-letters-211.html"><span class="badge">Featured</span><img src="thumbs/20261028201525-crop1711-lines123-v9_gold.jpg" alt="First letters from PHerc. 211: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>First letters from PHerc. <span class="nums">211</span></h3><p>The published crop from the November 2026 announcement.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc1667-wrap-28.html"><span class="badge">Featured</span><img src="thumbs/20251208130119-w028_20251208130119156_flatboi_gold.jpg" alt="A page from the first complete scroll: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A page from the first complete scroll</h3><p>A wrap from the first Herculaneum scroll to be read from end to end.</p><span class="go">Explore →</span></div></a>
+    </div>
+  </section>
+
+  <section id="scrolls">
+    <h2 class="reveal">Explore the scrolls</h2>
+    <p class="reveal" style="color:var(--muted)">30 pieces from 10 scrolls and fragments, all from the library buried at Herculaneum. Pick a scroll, or see the pieces with the most ink visible.</p>
+    <div class="filters" id="filters" role="toolbar" aria-label="How to browse">
+      <button class="chip on" type="button" data-filter="scrolls" aria-pressed="true">The scrolls</button><button class="chip" type="button" data-filter="ink" aria-pressed="false">Most ink visible</button><a class="chip" href="scrolls/pherc-1447.html">PHerc. 1447</a><a class="chip" href="scrolls/pherc-139.html">PHerc. 139</a><a class="chip" href="scrolls/pherc-1667.html">PHerc. 1667</a><a class="chip" href="scrolls/pherc-172.html">PHerc. 172</a><a class="chip" href="scrolls/pherc-211.html">PHerc. 211</a><a class="chip" href="scrolls/pherc-343.html">PHerc. 343</a><a class="chip" href="scrolls/pherc-306b.html">PHerc. 306B</a><a class="chip" href="scrolls/pherc-9b.html">PHerc. 9B</a><a class="chip" href="scrolls/pherc-841.html">PHerc. 841</a><a class="chip" href="scrolls/pherc-500p2.html">PHerc. 500P2</a>
+    </div>
+    <div class="scroll-grid" id="scrollGrid">
+      <a class="scroll-card reveal" href="scrolls/pherc-1447.html" data-scroll="pherc-1447"><img src="thumbs/20250702235910-auto_grown_20250702235910292_gold.jpg" alt="Where the letters appeared" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 1447</div><h3>Where the letters appeared</h3><p>The scroll where the team reported finding letters in September 2026.</p><span class="count">6 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-139.html" data-scroll="pherc-139"><img src="thumbs/20260422000000-title_2026042222_zmid_flatboi_gold.jpg" alt="The book that named itself" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 139</div><h3>The book that named itself</h3><p>Its title was read while the scroll was still rolled up: Philodemus, On Gods, Book 8.</p><span class="count">4 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-1667.html" data-scroll="pherc-1667"><img src="thumbs/20251208130119-w028_20251208130119156_flatboi_gold.jpg" alt="Read from end to end" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 1667</div><h3>Read from end to end</h3><p>The first Herculaneum scroll to be completely unrolled and read without being touched.</p><span class="count">4 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-172.html" data-scroll="pherc-172"><img src="thumbs/20250926153406-w088_20250926153406704_flatboi_gold.jpg" alt="On Vices, Book 1" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 172</div><h3>On Vices, Book <span class="nums">1</span></h3><p>About seventy percent virtually unrolled. The team recovered its title: Philodemus, On Vices, Book 1.</p><span class="count">4 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-211.html" data-scroll="pherc-211"><img src="thumbs/20261028201525-crop1711-lines123-v9_gold.jpg" alt="First letters, November" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 211</div><h3>First letters, November</h3><p>The piece on which first letters were reported in November 2026.</p><span class="count">1 piece</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-343.html" data-scroll="pherc-343"><img src="thumbs/20261007213123-concat_w047-w048_R5B2_z9500-11000_gold.jpg" alt="First letters, October" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 343</div><h3>First letters, October</h3><p>First letters were reported here in October 2026, with a related fragment beside them.</p><span class="count">2 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-306b.html" data-scroll="pherc-306b"><img src="thumbs/20261028110559-w074own_touchup_V5Rc_gold.jpg" alt="First letters, early November" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 306B</div><h3>First letters, early November</h3><p>First letters were reported on this wrap in November 2026.</p><span class="count">1 piece</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-9b.html" data-scroll="pherc-9b"><img src="thumbs/20250919131642-auto_grown_20250919061642215_inp_hr_gold.jpg" alt="A densely marked scroll" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 9B</div><h3>A densely marked scroll</h3><p>A scroll whose surfaces are crowded with marks. The gold is the AI&#x27;s guess.</p><span class="count">3 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-841.html" data-scroll="pherc-841"><img src="thumbs/20260220214732-auto_grown_20260220144552896_gold.jpg" alt="Marks on a small surface" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 841</div><h3>Marks on a small surface</h3><p>A small, lively surface. Look closely and decide what you see.</p><span class="count">2 pieces</span><span class="go">Open this scroll →</span></div></a><a class="scroll-card reveal" href="scrolls/pherc-500p2.html" data-scroll="pherc-500p2"><img src="thumbs/20250825181917--2_gold.jpg" alt="A broken fragment" loading="lazy" width="800" height="500"><div class="body"><div class="kicker">PHerc. 500P2</div><h3>A broken fragment</h3><p>Not a rolled scroll, but a broken piece of one, with tight rows of marks on some wraps.</p><span class="count">3 pieces</span><span class="go">Open this scroll →</span></div></a>
+    </div>
+    <div class="grid" id="inkGrid" hidden>
+    <a class="card reveal " href="pieces/pherc139-wrap-23.html"><img src="thumbs/20260311000000-w023_202603112281_gold.jpg" alt="A crowded wrap: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A crowded wrap</h3><p>One of the busiest turns in PHerc. 139, packed with rows of marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc139-wrap-24.html"><img src="thumbs/20260215000000-w024_2026021572_gold.jpg" alt="The next turn: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The next turn</h3><p>The neighbouring wrap, still rich with marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc9b-a-crowded-surface.html"><img src="thumbs/20250919131642-auto_grown_20250919061642215_inp_hr_gold.jpg" alt="A crowded surface: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A crowded surface</h3><p>One of the busiest public pieces of PHerc. 9B.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc172-wrap-88.html"><img src="thumbs/20250926153406-w088_20250926153406704_flatboi_gold.jpg" alt="A busy page of On Vices: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A busy page of On Vices</h3><p>One of the most marked wraps from Philodemus, On Vices, Book 1.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc172-wrap-81.html"><img src="thumbs/20251114202035-w081_20251114202035261_flatboi_gold.jpg" alt="Another wrap from Book 1: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Another wrap from Book <span class="nums">1</span></h3><p>A neighbouring stretch of the same Oxford scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc172-wrap-87.html"><img src="thumbs/20251112000002-w087_20251112000002214_flatboi_gold.jpg" alt="A close neighbour: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A close neighbour</h3><p>A wrap that sits close to the busiest page.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/first-letters-211.html"><img src="thumbs/20261028201525-crop1711-lines123-v9_gold.jpg" alt="First letters from PHerc. 211: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>First letters from PHerc. <span class="nums">211</span></h3><p>The published crop from the November 2026 announcement.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc9b-rows-of-marks.html"><img src="thumbs/20250919125754-auto_grown_20250919055754487_inp_hr_gold.jpg" alt="Rows of marks: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Rows of marks</h3><p>Another busy patch, with marks that sometimes fall into lines.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc841-marks-on-a-small-surface.html"><img src="thumbs/20260220214732-auto_grown_20260220144552896_gold.jpg" alt="Marks on a small surface: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Marks on a small surface</h3><p>A compact patch with lively gold marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc9b-another-busy-patch.html"><img src="thumbs/20250919131352-auto_grown_20250919061352722_inp_hr_gold.jpg" alt="Another busy patch: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Another busy patch</h3><p>A third densely marked piece from the same scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc172-wrap-66.html"><img src="thumbs/20251110110112-w066_20251110110112608_flatboi_gold.jpg" alt="A wide stretch: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A wide stretch</h3><p>A broader wrap, with plenty of room to explore.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc841-a-second-look.html"><img src="thumbs/20260221022814-auto_grown_20260220174252405_gold.jpg" alt="A second look: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A second look</h3><p>A second compact patch from the same small scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/wrap-58.html"><img src="thumbs/20260928183143-w058_gold.jpg" alt="Wrap 58: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Wrap <span class="nums">58</span></h3><p>One full turn of the rolled-up scroll, about 4 × 7 cm, flattened out.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/first-letters-343.html"><img src="thumbs/20261007213123-concat_w047-w048_R5B2_z9500-11000_gold.jpg" alt="First letters from PHerc. 343: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>First letters from PHerc. <span class="nums">343</span></h3><p>The published strip from the October 2026 announcement.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc1667-wrap-28.html"><img src="thumbs/20251208130119-w028_20251208130119156_flatboi_gold.jpg" alt="A page from the first complete scroll: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A page from the first complete scroll</h3><p>A wrap from the first Herculaneum scroll to be read from end to end.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/the-puzzle-piece.html"><img src="thumbs/20250703034159-auto_grown_20250703034159599_gold.jpg" alt="The puzzle piece: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The puzzle piece</h3><p>A wide piece full of activity. What do you see?</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/wrap-62.html"><img src="thumbs/20260928183145-w062_gold.jpg" alt="Wrap 62: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Wrap <span class="nums">62</span></h3><p>Another two turns in, with some of the clearest rows of marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/wrap-60.html"><img src="thumbs/20260928183144-w060_gold.jpg" alt="Wrap 60: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Wrap <span class="nums">60</span></h3><p>Two turns deeper into the same scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc139-wrap-58.html"><img src="thumbs/20260210000000-w058_2026021020_gold.jpg" alt="Deeper in the same scroll: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Deeper in the same scroll</h3><p>A wider wrap, further into PHerc. 139.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc1667-wrap-29.html"><img src="thumbs/20251212185248-w029_20251212185248662_flatboi_gold.jpg" alt="The neighbouring page: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The neighbouring page</h3><p>The next wrap of the same fully-read scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/fragment-500p2-a-pointed-piece.html"><img src="thumbs/20250825181917--2_gold.jpg" alt="A pointed piece: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A pointed piece</h3><p>A tapering wrap from a broken fragment, with tight rows of marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/where-the-letters-appeared.html"><img src="thumbs/20250702235910-auto_grown_20250702235910292_gold.jpg" alt="Where the letters appeared: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Where the letters appeared</h3><p>The small piece of scroll where the team reported finding letters.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/first-letters-306b.html"><img src="thumbs/20261028110559-w074own_touchup_V5Rc_gold.jpg" alt="First letters from PHerc. 306B: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>First letters from PHerc. <span class="nums">306B</span></h3><p>The wrap from the early-November 2026 announcement.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc139-the-title.html"><img src="thumbs/20260422000000-title_2026042222_zmid_flatboi_gold.jpg" alt="The name of the book: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The name of the book</h3><p>The title of this still-rolled scroll, recovered by the team: Philodemus, On Gods, Book 8.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/fragment-500p2-a-second-wrap.html"><img src="thumbs/20250825181859--1_gold.jpg" alt="A second wrap of the fragment: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A second wrap of the fragment</h3><p>Another tapering wrap from the same broken piece.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/fragment-500p2-a-third-wrap.html"><img src="thumbs/20250825181939-4_gold.jpg" alt="A third wrap of the fragment: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A third wrap of the fragment</h3><p>One more wrap from the broken fragment.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc1667-wrap-31.html"><img src="thumbs/20251223230000-w031_2025122323_flatboi_gold.jpg" alt="Two turns further: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>Two turns further</h3><p>Another turn of the ethics scroll, a little further in.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/pherc1667-wrap-32.html"><img src="thumbs/20260105050000-w032_2026010505_flatboi_gold.jpg" alt="One more turn: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>One more turn</h3><p>One more neighbouring wrap from the same scroll.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/the-bright-patch.html"><img src="thumbs/20250703025628-auto_grown_20250703025628283_gold.jpg" alt="The bright patch: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>The bright patch</h3><p>A smaller piece with strong, bold marks.</p><span class="go">Explore →</span></div></a>
+    <a class="card reveal " href="pieces/a-related-fragment-343p.html"><img src="thumbs/20250511003658-tifxyz_gold.jpg" alt="A related fragment: gold marks show where the AI sees ink" loading="lazy" width="640" height="480"><div class="body"><h3>A related fragment</h3><p>A smaller fragment from PHerc. 343P, a piece related to the October scroll.</p><span class="go">Explore →</span></div></a>
     </div>
   </section>
 
@@ -107,15 +141,13 @@
 
   <section class="reveal" id="scholars">
     <h2>What scholars have already read</h2>
-    <p style="color:var(--muted)">The pictures above are the AI's view, not readings. Here is what experts in ancient writing have published so far from other scrolls (in their words, on the Vesuvius Challenge site):</p>
+    <p style="color:var(--muted)">The pictures above are the AI's view, not readings. Here is what experts in ancient writing have published so far (in their words, on the Vesuvius Challenge site). PHerc. Paris. 4, the 2023 Grand Prize scroll, is not in this gallery because a publication-reservation notice applies until 25 June 2027.</p>
     <div class="story">
       <div class="panel"><h3>Scroll 1 (PHerc. Paris. 4)</h3><p>The 2023 Grand Prize: the first passages ever read from inside a closed scroll, Greek prose attributed to the philosopher Philodemus, musing on pleasure.</p><p><a href="https://scrollprize.org/grandprize">Read the announcement →</a></p></div>
-      <div class="panel"><h3>Scroll 4 (PHerc. 1667)</h3><p>The first Herculaneum scroll to be completely unrolled and read without touching it: a philosophical work on ethics.</p><p><a href="https://scrollprize.org/firstscroll">Read the announcement →</a></p></div>
-      <div class="panel"><h3>PHerc. 139</h3><p>Its title was recovered while still rolled up, naming the author and the work: Philodemus, <i>On Gods</i>, Book 8.</p><p><a href="https://scrollprize.org/firstscroll">Read more →</a></p></div>
+      <div class="panel"><h3>Scroll 4 (PHerc. 1667)</h3><p>The first Herculaneum scroll to be completely unrolled and read without touching it: a philosophical work on ethics. You can look at ink maps from this scroll above.</p><p><a href="scrolls/pherc-1667.html">Explore it here →</a></p></div>
+      <div class="panel"><h3>PHerc. 139</h3><p>Its title was recovered while still rolled up, naming the author and the work: Philodemus, <i>On Gods</i>, Book 8.</p><p><a href="scrolls/pherc-139.html">See the title piece →</a></p></div>
     </div>
   </section>
-
-
 
   <section class="help reveal" id="help">
     <h2>Want to help read the scrolls?</h2>
@@ -131,19 +163,23 @@
     <div class="panel">
       <h3>Thank you</h3>
       <p>This only exists because other people shared their work: <b>Domenico Russo</b> made the Reader V3 ink AI; the <b>Vesuvius Challenge</b>
-      team and volunteers scan, trace and openly publish the scrolls and wrote the reading code; and community members like <b>Ahggggg</b> showed where
-      Windows users get stuck. I built on top of all of that and hope it adds a small step forward.</p>
+      team and volunteers scan, trace and openly publish the scrolls and wrote the reading code; community members like <b>Ahggggg</b> showed where
+      Windows users get stuck; and many others trained and published the ink maps you can browse here. I built on top of all of that and hope it adds a small step forward.</p>
     </div>
   </section>
 </main>
 <footer><div class="wrap">
-<p>Made by Jamie Manning, a history lover learning about AI. The AI ink reader is <b>Reader V3</b> by Domenico Russo (MIT license);
-the reading code comes from the Vesuvius Challenge team's <a href="https://github.com/ScrollPrize/villa">villa</a> project (MIT).
-Scroll scans: <a href="https://scrollprize.org">Vesuvius Challenge</a>, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>:
+<p>Made by Jamie Manning, a history lover learning about AI. Ink maps on this site are either
+<b>Reader V3</b> by Domenico Russo (MIT license), run on a laptop with the free reader, or the
+Vesuvius Challenge team's own published maps (used with credit). The reading code comes from the
+team's <a href="https://github.com/ScrollPrize/villa">villa</a> project (MIT).
+Scroll scans: <a href="https://scrollprize.org">Vesuvius Challenge</a>,
+<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>:
 free for non-commercial use with credit. Pictures on this site come from that data and carry the same terms. Please cite
 <i>Vesuvius Challenge – CT Scans of Herculaneum Papyri</i>.</p>
 <p>The free laptop reader and Windows app: <a href="https://github.com/jamiejmann/vesuvius-cpu-reader">github.com/jamiejmann/vesuvius-cpu-reader</a>.
 Deep-zoom viewer: OpenSeadragon (BSD). Headings: Cormorant Garamond (OFL). This is a personal project, not an official Vesuvius Challenge site.</p>
 </div></footer>
+<script>window.GALLERY_PIECES = [{"slug": "where-the-letters-appeared", "title": "Where the letters appeared"}, {"slug": "wrap-58", "title": "Wrap 58"}, {"slug": "wrap-60", "title": "Wrap 60"}, {"slug": "wrap-62", "title": "Wrap 62"}, {"slug": "the-bright-patch", "title": "The bright patch"}, {"slug": "the-puzzle-piece", "title": "The puzzle piece"}, {"slug": "pherc139-the-title", "title": "The name of the book"}, {"slug": "pherc139-wrap-23", "title": "A crowded wrap"}, {"slug": "pherc139-wrap-24", "title": "The next turn"}, {"slug": "pherc139-wrap-58", "title": "Deeper in the same scroll"}, {"slug": "pherc1667-wrap-28", "title": "A page from the first complete scroll"}, {"slug": "pherc1667-wrap-29", "title": "The neighbouring page"}, {"slug": "pherc1667-wrap-31", "title": "Two turns further"}, {"slug": "pherc1667-wrap-32", "title": "One more turn"}, {"slug": "pherc172-wrap-88", "title": "A busy page of On Vices"}, {"slug": "pherc172-wrap-81", "title": "Another wrap from Book 1"}, {"slug": "pherc172-wrap-87", "title": "A close neighbour"}, {"slug": "pherc172-wrap-66", "title": "A wide stretch"}, {"slug": "first-letters-211", "title": "First letters from PHerc. 211"}, {"slug": "first-letters-343", "title": "First letters from PHerc. 343"}, {"slug": "a-related-fragment-343p", "title": "A related fragment"}, {"slug": "first-letters-306b", "title": "First letters from PHerc. 306B"}, {"slug": "pherc9b-a-crowded-surface", "title": "A crowded surface"}, {"slug": "pherc9b-rows-of-marks", "title": "Rows of marks"}, {"slug": "pherc9b-another-busy-patch", "title": "Another busy patch"}, {"slug": "pherc841-marks-on-a-small-surface", "title": "Marks on a small surface"}, {"slug": "pherc841-a-second-look", "title": "A second look"}, {"slug": "fragment-500p2-a-pointed-piece", "title": "A pointed piece"}, {"slug": "fragment-500p2-a-second-wrap", "title": "A second wrap of the fragment"}, {"slug": "fragment-500p2-a-third-wrap", "title": "A third wrap of the fragment"}];</script>
 <script src="assets/site.js"></script>
 </body></html>

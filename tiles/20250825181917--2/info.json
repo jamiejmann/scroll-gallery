@@ -1,0 +1,20 @@
+{
+ "id": "20250825181917--2",
+ "sample": "PHerc0500P2",
+ "width": 4800,
+ "height": 8192,
+ "native_width": 3518,
+ "native_height": 5975,
+ "ink_lo": 35.0,
+ "ink_hi": 241.0,
+ "tiles": 1746,
+ "zarr": "s3://vesuvius-challenge-open-data/PHerc0500P2/segments/20250825181917--2/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr",
+ "team_map": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0500P2/segments/20250825181917--2/ink-detection/downsampled/PHerc0500P2-20250825181917-2.215um-0.4m-111keV-volume-20250526151718-20260417190342-new_canon_autoresearch_recipe-tile256-stride128-ds8.jpg",
+ "team_local": "team/20250825181917--2_team_ds8.jpg",
+ "source": "team-published",
+ "model": "new_canon_autoresearch_recipe",
+ "um": 2.215,
+ "seconds": null,
+ "ink_frac": 0.18926889750517814,
+ "quality": 71.89189260601772
+}

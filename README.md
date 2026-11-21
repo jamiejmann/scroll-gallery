@@ -1,15 +1,21 @@
-# Ink from 79 AD
+# Ink from 79 AD: local gallery (PRIVATE DRAFT — do not publish until Jamie approves)
 
-An unlisted preview gallery of already-published ink readings from scroll **PHerc. 1447**, buried by Vesuvius in 79 AD. You can explore the pieces here: [jamiejmann.github.io/scroll-gallery](https://jamiejmann.github.io/scroll-gallery/).
+Static site (plain HTML/CSS/JS + OpenSeadragon) showing published ink maps from ten Herculaneum
+scrolls and fragments. Six PHerc. 1447 pieces were read on a CPU with
+github.com/jamiejmann/vesuvius-cpu-reader (Reader V3). The rest use the Vesuvius Challenge
+team's own published full-resolution ink maps, with credit.
 
-This repository is public so the preview can be served on GitHub Pages. The site is not announced, and it asks search engines not to index it (`robots.txt` and a `noindex` tag).
+**Not for publication until approved.** The Vesuvius Challenge data agreement asks that
+revelations of hidden text are not published without the team's written approval. This preview
+stays unlisted (`noindex`, `robots.txt` Disallow) until Jamie signs off on the December 1 launch.
 
-## Credits
+- Preview locally: `cd gallery && python3 -m http.server 8811` then open http://127.0.0.1:8811/
+- Rebuild pages/share cards after changing text: `python gallery_work/build_site.py`
+- Per piece: `pieces/<slug>.html` (own Open Graph/Twitter card in `og/`), deep-zoom tiles in `tiles/<segment>/{ink,scan}.dzi`.
+- Per scroll: `scrolls/<slug>.html`. Share links use `?x=&y=&z=&view=` so a link opens on the same spot.
+- `SITE_URL` in build_site.py is https://jamiejmann.github.io/scroll-gallery/ for absolute share-card URLs.
 
-- **Reader V3** ink model by [Domenico Russo](https://github.com/DomRusso2/reader-v3) (MIT license)
-- Reading code from the Vesuvius Challenge team's [villa](https://github.com/ScrollPrize/villa) project (MIT license)
-- Scroll scans from the [Vesuvius Challenge](https://scrollprize.org), licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Please cite *Vesuvius Challenge – CT Scans of Herculaneum Papyri*. Pictures on this site come from that data and carry the same terms.
-- Deep-zoom viewer: [OpenSeadragon](https://openseadragon.github.io/) (BSD)
-- Headings: Cormorant Garamond (SIL Open Font License)
-
-This is a personal project by Jamie Manning, not an official Vesuvius Challenge site.
+Credits: Reader V3 by Domenico Russo (MIT); other published maps as credited on each piece page;
+ScrollPrize/villa (MIT); OpenSeadragon (BSD-3, vendor/openseadragon/LICENSE.txt);
+Cormorant Garamond (OFL, assets/fonts/OFL-Cormorant.txt). Data: Vesuvius Challenge, CC BY-NC 4.0.
+PHerc. Paris. 4 is excluded (publication-reservation until 25 June 2027).

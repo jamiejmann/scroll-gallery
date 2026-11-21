@@ -1,0 +1,20 @@
+{
+ "id": "20261028110559-w074own_touchup_V5Rc",
+ "sample": "PHerc0306B",
+ "width": 7360,
+ "height": 4540,
+ "native_width": 7779,
+ "native_height": 4899,
+ "ink_lo": 68.0,
+ "ink_hi": 195.0,
+ "tiles": 1444,
+ "zarr": "s3://vesuvius-challenge-open-data/PHerc0306B/segments/20261028110559-w074own_touchup_V5Rc/surface-volumes/8.64um-1.2m-116keV-volume-20250521133212.zarr",
+ "team_map": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0306B/segments/20261028110559-w074own_touchup_V5Rc/ink-detection/downsampled/PHerc0306B-20261028110559-8.64um-1.2m-116keV-volume-20250521133212-20261019111505-reader-v3-tile384-stride192-ds8.jpg",
+ "team_local": "team/20261028110559-w074own_touchup_V5Rc_team_ds8.jpg",
+ "source": "team-published",
+ "model": "reader_v3",
+ "um": 8.64,
+ "seconds": null,
+ "ink_frac": 0.1804553058347919,
+ "quality": 50.41162692913603
+}

@@ -1,0 +1,104 @@
+{
+ "scrolls": [
+  {
+   "id": "PHerc1447",
+   "slug": "pherc-1447",
+   "short": "PHerc. 1447",
+   "title": "Where the letters appeared",
+   "teaser": "The scroll where the team reported finding letters in September 2026.",
+   "story": "In September 2026 the Vesuvius Challenge team reported letters inside this still-rolled scroll. The six pieces here include the spot they pointed to, and three neighbouring wraps.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 6
+  },
+  {
+   "id": "PHerc0139",
+   "slug": "pherc-139",
+   "short": "PHerc. 139",
+   "title": "The book that named itself",
+   "teaser": "Its title was read while the scroll was still rolled up: Philodemus, On Gods, Book 8.",
+   "story": "Scholars recovered the title of this scroll before most of its body had been unrolled, naming the author and the work: the Epicurean philosopher Philodemus, On Gods, Book 8. About a fifth of it has been virtually unrolled so far.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 4
+  },
+  {
+   "id": "PHerc1667",
+   "slug": "pherc-1667",
+   "short": "PHerc. 1667",
+   "title": "Read from end to end",
+   "teaser": "The first Herculaneum scroll to be completely unrolled and read without being touched.",
+   "story": "This is Scroll 4, the first to be virtually unrolled all the way and read end to end: a philosophical work on ethics, reviewed by papyrologists. The pictures here are the AI's ink maps, not a new edition of that text.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 4
+  },
+  {
+   "id": "PHerc0172",
+   "slug": "pherc-172",
+   "short": "PHerc. 172",
+   "title": "On Vices, Book 1",
+   "teaser": "About seventy percent virtually unrolled. The team recovered its title: Philodemus, On Vices, Book 1.",
+   "story": "This Oxford scroll is similar in size to the famous Grand Prize scroll. The team has recovered its title \u2014 Philodemus, On Vices, Book 1 \u2014 and virtually unrolled most of it. Zoom in and look for rows of marks the way a reader would.",
+   "place": "Bodleian Library, Oxford",
+   "n": 4
+  },
+  {
+   "id": "PHerc0211",
+   "slug": "pherc-211",
+   "short": "PHerc. 211",
+   "title": "First letters, November",
+   "teaser": "The piece on which first letters were reported in November 2026.",
+   "story": "In November 2026 the Vesuvius Challenge announced that letters had been found in this scroll. This is the published crop of that area, shown with the team's official ink map. Experts made the final call; the gold is the AI's view of the same spot.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 1
+  },
+  {
+   "id": "PHerc0343",
+   "slug": "pherc-343",
+   "short": "PHerc. 343",
+   "title": "First letters, October",
+   "teaser": "First letters were reported here in October 2026, with a related fragment beside them.",
+   "story": "In October 2026 letters were reported from this scroll. The main piece is the published strip; the second is a related fragment (PHerc. 343P). As always, the gold marks where the AI sees ink, not a finished reading.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 2
+  },
+  {
+   "id": "PHerc0306B",
+   "slug": "pherc-306b",
+   "short": "PHerc. 306B",
+   "title": "First letters, early November",
+   "teaser": "First letters were reported on this wrap in November 2026.",
+   "story": "The team announced letters from this wrap in early November 2026. This is their published ink map of that surface. Look at the brighter marks in the middle, and compare them with the X-ray scan.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 1
+  },
+  {
+   "id": "PHerc0009B",
+   "slug": "pherc-9b",
+   "short": "PHerc. 9B",
+   "title": "A densely marked scroll",
+   "teaser": "A scroll whose surfaces are crowded with marks. The gold is the AI's guess.",
+   "story": "These three pieces are among the busiest surfaces in the public data for this scroll. Bold marks can be writing, or cracks and fibres. There is no official reading here yet: treat it as a puzzle, and leave the last word to the experts.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 3
+  },
+  {
+   "id": "PHerc0841",
+   "slug": "pherc-841",
+   "short": "PHerc. 841",
+   "title": "Marks on a small surface",
+   "teaser": "A small, lively surface. Look closely and decide what you see.",
+   "story": "Two neighbouring patches from a compact scroll. The AI has painted a lot of gold. Some of it may be writing, some of it may not. Switch between the gold and the original scan, and look for strokes that cross the fibres the way a pen would.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 2
+  },
+  {
+   "id": "PHerc0500P2",
+   "slug": "pherc-500p2",
+   "short": "PHerc. 500P2",
+   "title": "A broken fragment",
+   "teaser": "Not a rolled scroll, but a broken piece of one, with tight rows of marks on some wraps.",
+   "story": "This is a fragment, not a complete roll. A few of its wraps show tight, repeating rows. As with the others, the gold is the published ink map, not a transcription.",
+   "place": "Biblioteca Nazionale di Napoli",
+   "n": 3
+  }
+ ]
+}

@@ -90,7 +90,7 @@ function wire() {
   document.querySelectorAll('[data-mode]').forEach(bt => bt.onclick = () => { VIEW.mode = bt.dataset.mode; apply(); });
   $('vReset').onclick = () => { Object.assign(VIEW, {contrast: 1, bright: 0, invert: false, cut: 0, color: '#e3b25a', opacity: 80});
     $('vContrast').value = 1; $('vBright').value = 0; $('vInvert').checked = false; $('vCut').value = 0; $('vColor').value = '#e3b25a'; $('vOpacity').value = 80; apply(); };
-  $('compare').onclick = () => toggleCompare();
+  if ($('compare')) $('compare').onclick = () => toggleCompare();
   $('share').onclick = () => shareView($('share'));
   $('toastShare').onclick = () => shareView($('toastShare'));
   $('toastX').onclick = () => $('toast').classList.remove('show');

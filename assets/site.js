@@ -31,3 +31,40 @@ const ss = document.getElementById('shareSite');
 if (ss) ss.onclick = async () => { const r = await share(location.href.split('#')[0], document.title, 'Zoom into a 2,000-year-old scroll buried by Vesuvius'); if (r === 'copied') { ss.textContent = 'Link copied ✓'; setTimeout(() => ss.textContent = 'Share this site', 2500); } };
 // optional "a closer look" block
 fetch('findings/finding.html').then(r => r.ok ? r.text() : '').then(t => { const f = document.getElementById('finding'); if (t && f) f.innerHTML = t; else if (f) f.remove(); }).catch(() => {});
+
+// Surprise me + browse filters (homepage)
+(function () {
+  function goRandom() {
+    const list = window.GALLERY_PIECES || [];
+    if (!list.length) return;
+    const p = list[Math.floor(Math.random() * list.length)];
+    location.href = (location.pathname.replace(/[^/]+$/, '') || './') + 'pieces/' + p.slug + '.html';
+  }
+  ['surprise', 'surprise2'].forEach(id => { const b = document.getElementById(id); if (b) b.onclick = goRandom; });
+
+  const filters = document.getElementById('filters');
+  const scrollGrid = document.getElementById('scrollGrid');
+  const inkGrid = document.getElementById('inkGrid');
+  if (!filters || !scrollGrid || !inkGrid) return;
+  filters.querySelectorAll('button[data-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.filter;
+      filters.querySelectorAll('button[data-filter]').forEach(b => {
+        const on = b === btn;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      const showInk = mode === 'ink';
+      inkGrid.hidden = !showInk;
+      scrollGrid.hidden = showInk;
+    });
+  });
+})();
+
+// Deep-link: #ink opens the "most ink visible" grid
+(function(){
+  if (location.hash === '#ink') {
+    const btn = document.querySelector('button[data-filter="ink"]');
+    if (btn) btn.click();
+  }
+})();

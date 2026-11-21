@@ -1,0 +1,20 @@
+{
+ "id": "20260311000000-w023_202603112281",
+ "sample": "PHerc0139",
+ "width": 7538,
+ "height": 8192,
+ "native_width": 7959,
+ "native_height": 8279,
+ "ink_lo": 48.0,
+ "ink_hi": 233.0,
+ "tiles": 2706,
+ "zarr": "s3://vesuvius-challenge-open-data/PHerc0139/segments/20260311000000-w023_202603112281/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr",
+ "team_map": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0139/segments/20260311000000-w023_202603112281/ink-detection/downsampled/PHerc0139-20260311000000-1.129um-0.22m-59keV-volume-20260413113053-L1-20260709123958-mrg20736-1um-s1z2-tile256-stride128-ds8.jpg",
+ "team_local": "team/20260311000000-w023_202603112281_team_ds8.jpg",
+ "source": "team-published",
+ "model": "mrg20736_1um_s1z2",
+ "um": 1.129,
+ "seconds": null,
+ "ink_frac": 0.3849661808339917,
+ "quality": 115.53994074734646
+}
