@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0a08">
+<meta name="robots" content="noindex">
+<title>Where the letters appeared · Ink from 79 AD</title>
+<meta name="description" content="The small piece of scroll where the team reported finding letters. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Where the letters appeared · Ink from 79 AD">
+<meta property="og:description" content="The small piece of scroll where the team reported finding letters. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta property="og:image" content="https://jamiejmann.github.io/scroll-gallery/og/where-the-letters-appeared.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jamiejmann.github.io/scroll-gallery/pieces/where-the-letters-appeared.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Where the letters appeared · Ink from 79 AD">
+<meta name="twitter:description" content="The small piece of scroll where the team reported finding letters. Zoom into a 2,000-year-old scroll buried by Vesuvius.">
+<meta name="twitter:image" content="https://jamiejmann.github.io/scroll-gallery/og/where-the-letters-appeared.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/cormorant-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="topbar"><a class="brand" href="../index.html">← <span>Ink</span> from 79 AD</a>
+<button class="btn small" id="share" type="button">Share this view</button></div>
+<main class="wrap">
+  <div class="piece-head">
+    <div class="kicker">PHerc. 1447 · a scroll buried by Vesuvius in 79 AD</div>
+    <h1>Where the letters appeared</h1>
+    <p>You're looking at a page from a 2,000-year-old book that has never been opened. Pinch or scroll to zoom, drag to move around.</p>
+  </div>
+  <div class="viewers" id="viewers">
+    <div class="osd" id="osdMain"><span class="label" id="mainLabel">Gold = where the AI sees ink</span></div>
+    <div class="osd" id="osdTeam" hidden><span class="label">The team's picture (smaller preview)</span></div>
+  </div>
+  <div class="modes" role="group" aria-label="How to show the picture">
+    <button class="btn on" data-mode="overlay" type="button">✨ Gold highlight</button>
+    <button class="btn" data-mode="ink" type="button">Ink only</button>
+    <button class="btn" data-mode="scan" type="button">Original scan</button>
+  </div>
+  <div class="modes"><button class="btn" id="compare" type="button">Compare with the team's picture</button></div>
+  <details class="more" id="tools">
+    <summary>More tools: make it easier to read</summary>
+    <p><span class="tag">These only change how the picture looks on your screen, not the reading itself.</span></p>
+    <div class="tools">
+      <label>Contrast <input type="range" id="vContrast" min="0.5" max="4" step="0.1" value="1"></label>
+      <label>Brightness <input type="range" id="vBright" min="-120" max="120" step="5" value="0"></label>
+      <label>Hide faint marks <input type="range" id="vCut" min="0" max="95" step="5" value="0"></label>
+      <label>Gold strength <input type="range" id="vOpacity" min="0" max="100" step="5" value="80"></label>
+      <label>Highlight colour <select id="vColor"><option value="#e3b25a">Gold</option><option value="#ff4b3e">Red</option><option value="#29d3ff">Blue</option><option value="#47ff6a">Green</option></select></label>
+      <label class="check"><input type="checkbox" id="vInvert"> Dark letters on light</label>
+    </div>
+    <p><button class="btn small" id="vReset" type="button">Reset</button></p>
+  </details>
+  <section style="padding:26px 0 0">
+    <div class="panel">
+      <h3>The story of this piece</h3>
+      <p>In September 2026 the Vesuvius Challenge team reported finding letters inside this scroll, and the spot they pointed to is on this little piece of papyrus. Nobody has unrolled it: what you see was revealed with X-rays and AI, on an ordinary computer.</p>
+      <h3>What to look for</h3>
+      <p>Look at the upper right. A row of curved strokes and a round shape stand out from the rest. Do they look like letters to you? Experts make the final call, but this is the kind of mark they look for.</p>
+      <h3>What does the gold mean?</h3>
+      <p>The ink on these scrolls is made of soot, just like the burnt papyrus, so it's nearly invisible in X-rays. An AI that learned from
+      known letters paints <span class="gold">gold</span> wherever it thinks ink is. Brighter gold means it's more confident. It's a very good guess, not a reading.</p>
+    </div>
+  </section>
+  <nav class="pager"><a class="btn" href="../index.html#gallery">← All pieces</a><a class="btn primary" href="wrap-58.html">Next: Wrap 58 →</a></nav>
+  <details class="more">
+    <summary>For the curious: how this picture was made</summary>
+    <p>This is one <i>segment</i>: a stretch of papyrus that the Vesuvius Challenge team traced through a 3D X-ray scan
+    (8.64 micrometres per pixel, taken at the ESRF in Grenoble) and flattened into a picture. The ink map was made with Reader V3
+    by Domenico Russo, running on an ordinary processor (CPU) with the free reader at <a href="https://github.com/jamiejmann/vesuvius-cpu-reader">github.com/jamiejmann/vesuvius-cpu-reader</a>.
+    The scan view is the average of the five middle layers.</p>
+    <p>Size: 3,240 × 2,980 pixels (about 28 × 26 mm). Reading time: 1.9 minutes on 6 CPU threads.
+    The team's picture is their own Reader V3 result, shared as a smaller preview (1/8 size).</p>
+    <p>Segment <code>20250702235910-auto_grown_20250702235910292</code><br>Data: <code>s3://vesuvius-challenge-open-data/PHerc1447/segments/20250702235910-auto_grown_20250702235910292/surface-volumes/8.64um-1.2m-116keV-volume-20250521151220.zarr</code><br>Team map: <a href="https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1447/segments/20250702235910-auto_grown_20250702235910292/ink-detection/downsampled/PHerc1447-20250702235910-8.64um-1.2m-116keV-volume-20250521151220-20261019111505-reader-v3-tile384-stride192-ds8.jpg">download</a></p>
+  </details>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <button class="x" id="toastX" aria-label="Close">×</button>
+  <h3>You just zoomed into a scroll sealed since 79 AD.</h3>
+  <p>Nobody had seen this page for almost 2,000 years until X-rays and AI brought it back. Show a friend exactly what you're looking at.</p>
+  <button class="btn primary small" id="toastShare" type="button">Share this view</button>
+</div>
+<footer><div class="wrap">
+<p>Made by Jamie Manning, a history lover learning about AI. The AI ink reader is <b>Reader V3</b> by Domenico Russo (MIT license);
+the reading code comes from the Vesuvius Challenge team's <a href="https://github.com/ScrollPrize/villa">villa</a> project (MIT).
+Scroll scans: <a href="https://scrollprize.org">Vesuvius Challenge</a>, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>:
+free for non-commercial use with credit. Pictures on this site come from that data and carry the same terms. Please cite
+<i>Vesuvius Challenge – CT Scans of Herculaneum Papyri</i>.</p>
+<p>The free laptop reader and Windows app: <a href="https://github.com/jamiejmann/vesuvius-cpu-reader">github.com/jamiejmann/vesuvius-cpu-reader</a>.
+Deep-zoom viewer: OpenSeadragon (BSD). Headings: Cormorant Garamond (OFL). This is a personal project, not an official Vesuvius Challenge site.</p>
+</div></footer>
+<script>window.PIECE = {"id": "20250702235910-auto_grown_20250702235910292", "slug": "where-the-letters-appeared", "title": "Where the letters appeared", "width": 3240, "height": 2980, "ink_lo": 64.0, "ink_hi": 210.0, "team_local": "team/20250702235910-auto_grown_20250702235910292_reader-v3_ds8.jpg"};</script>
+<script src="../vendor/openseadragon/openseadragon.min.js"></script>
+<script src="../assets/piece.js"></script>
+</body></html>

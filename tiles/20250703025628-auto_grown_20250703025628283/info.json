@@ -1,0 +1,11 @@
+{
+ "id": "20250703025628-auto_grown_20250703025628283",
+ "width": 4260,
+ "height": 4100,
+ "ink_lo": 63.0,
+ "ink_hi": 194.0,
+ "tiles": 834,
+ "zarr": "s3://vesuvius-challenge-open-data/PHerc1447/segments/20250703025628-auto_grown_20250703025628283/surface-volumes/8.64um-1.2m-116keV-volume-20250521151220.zarr",
+ "team_map": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1447/segments/20250703025628-auto_grown_20250703025628283/ink-detection/downsampled/PHerc1447-20250703025628-8.64um-1.2m-116keV-volume-20250521151220-20261019111505-reader-v3-tile384-stride192-ds8.jpg",
+ "seconds": 286.907621383667
+}
