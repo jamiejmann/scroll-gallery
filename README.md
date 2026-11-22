@@ -1,13 +1,14 @@
-# Ink from 79 AD: local gallery (PRIVATE DRAFT — do not publish until Jamie approves)
+# Ink from 79 AD: scroll gallery
+
+Free Windows app: https://github.com/jamiejmann/vesuvius-cpu-reader/releases/tag/v1.0.0
 
 Static site (plain HTML/CSS/JS + OpenSeadragon) showing published ink maps from ten Herculaneum
 scrolls and fragments. Six PHerc. 1447 pieces were read on a CPU with
 github.com/jamiejmann/vesuvius-cpu-reader (Reader V3). The rest use the Vesuvius Challenge
 team's own published full-resolution ink maps, with credit.
 
-**Not for publication until approved.** The Vesuvius Challenge data agreement asks that
-revelations of hidden text are not published without the team's written approval. This preview
-stays unlisted (`noindex`, `robots.txt` Disallow) until Jamie signs off on the December 1 launch.
+Public since 22 November 2026, with the Vesuvius Challenge team's written OK (21 November 2026).
+Only the team's published data is shown. No new text is claimed.
 
 - Preview locally: `cd gallery && python3 -m http.server 8811` then open http://127.0.0.1:8811/
 - Rebuild pages/share cards after changing text: `python gallery_work/build_site.py`

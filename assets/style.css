@@ -164,3 +164,8 @@ details.more summary::before { content:"▸ "; } details.more[open] summary::bef
 }
 .scroll-card .count { display:block; margin-top:10px; }
 .scroll-card .go { display:block; margin-top:4px; }
+
+/* Get the free Windows app */
+.btn.getapp { border-color:rgba(227,178,90,.55); }
+footer .getapp-row { display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; margin:0 0 18px; }
+footer a.btn.getapp { color:var(--gold2, #f0c674); text-decoration:none; }
