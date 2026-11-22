@@ -6,9 +6,17 @@ let viewer, team = null, inkTI = null, scanTI = null, ver = 1, inkLUT, scanLUT;
 const hexRGB = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
 
 // 0-255 model score -> what you see. Nothing is written back; only the screen changes.
+function isDarkInk(r, g, b) { return r + g + b < 80; }
+function colorName() {
+  const el = $('vColor');
+  const opt = el && el.options[el.selectedIndex];
+  return (opt && opt.text) || 'Gold';
+}
+
 function buildLUTs() {
   const lo = P.ink_lo, hi = P.ink_hi, k = VIEW.contrast, b = VIEW.bright, cutRaw = VIEW.cut ? VIEW.cut / 100 * 255 : -1;
   const [cr, cg, cb] = hexRGB(VIEW.color), op = VIEW.opacity / 100;
+  const darkInk = VIEW.mode === 'overlay' && isDarkInk(cr, cg, cb);
   inkLUT = new Uint8ClampedArray(1024); scanLUT = new Uint8ClampedArray(1024);
   for (let v = 0; v < 256; v++) {
     let s = Math.max(0, Math.min(1, (v - lo) / Math.max(1, hi - lo))) * 255;
@@ -17,9 +25,19 @@ function buildLUTs() {
     const o = v * 4;
     if (VIEW.mode === 'overlay') { inkLUT[o] = cr; inkLUT[o + 1] = cg; inkLUT[o + 2] = cb; inkLUT[o + 3] = op * s; }
     else { const y = VIEW.invert ? 255 - s : s; inkLUT[o] = inkLUT[o + 1] = inkLUT[o + 2] = y; inkLUT[o + 3] = 255; }
-    let g = VIEW.mode === 'scan' ? Math.max(0, Math.min(255, (v - 128) * k + 128 + b)) : v * 0.85;
+    let g;
+    if (VIEW.mode === 'scan') g = Math.max(0, Math.min(255, (v - 128) * k + 128 + b));
+    else if (darkInk && !VIEW.invert) g = Math.max(0, Math.min(255, 150 + v * 0.40));
+    else g = v * 0.85;
     if (VIEW.invert) g = 255 - g;
-    scanLUT[o] = scanLUT[o + 1] = scanLUT[o + 2] = g; scanLUT[o + 3] = 255;
+    if (darkInk && !VIEW.invert) {
+      scanLUT[o] = Math.min(255, g * 1.06);
+      scanLUT[o + 1] = g;
+      scanLUT[o + 2] = Math.max(0, g * 0.90);
+    } else {
+      scanLUT[o] = scanLUT[o + 1] = scanLUT[o + 2] = g;
+    }
+    scanLUT[o + 3] = 255;
   }
 }
 function onTileDrawing(e) {
@@ -36,7 +54,7 @@ function apply() {
   buildLUTs(); ver++;
   if (inkTI) inkTI.setOpacity(VIEW.mode === 'scan' ? 0 : 1);
   if (scanTI) scanTI.setOpacity(VIEW.mode === 'ink' ? 0 : 1);
-  $('mainLabel').textContent = {overlay: 'Gold = where the AI sees ink', ink: 'Ink only (bright = ink)', scan: 'The X-ray scan, no AI'}[VIEW.mode];
+  $('mainLabel').textContent = {overlay: colorName() + ' = where the AI sees ink', ink: 'Ink only (bright = ink)', scan: 'The X-ray scan, no AI'}[VIEW.mode];
   document.querySelectorAll('[data-mode]').forEach(x => x.classList.toggle('on', x.dataset.mode === VIEW.mode));
   viewer && viewer.forceRedraw(); saveURL();
 }
